@@ -1,0 +1,9 @@
+## Copia este archivo como local.properties y rellena tus valores reales.
+## NUNCA subas local.properties al repositorio.
+
+# Ruta al Android SDK (Android Studio la genera automáticamente)
+sdk.dir=/Users/tu_usuario/Library/Android/sdk
+
+# Credenciales de Supabase — obtenlas en: Project Settings > API
+SUPABASE_URL=https://<tu-proyecto>.supabase.co
+SUPABASE_KEY=<tu-anon-key>
