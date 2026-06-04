@@ -6,4 +6,16 @@ sdk.dir=/Users/tu_usuario/Library/Android/sdk
 
 # Credenciales de Supabase — obtenlas en: Project Settings > API
 SUPABASE_URL=https://<tu-proyecto>.supabase.co
-SUPABASE_KEY=<tu-anon-key>
+
+# Usa la CLAVE PUBLICABLE (sb_publishable_...), NO la service role key.
+#
+# Diferencia entre las claves:
+#   - Clave publicable (sb_publishable_...): segura para incluir en apps
+#     cliente (Android, iOS, web). Solo permite las operaciones que las
+#     políticas de Row Level Security (RLS) autoricen. Úsala aquí.
+#
+#   - Service role key (sb_secret_...): tiene privilegios de administrador,
+#     omite RLS completamente y puede leer/escribir cualquier dato.
+#     NUNCA la incluyas en una app cliente ni en código que suba a GitHub.
+#
+SUPABASE_KEY=sb_publishable_<tu-clave-publicable>

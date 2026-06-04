@@ -77,8 +77,13 @@ Edita `local.properties` y reemplaza los valores:
 
 ```properties
 SUPABASE_URL=https://<tu-proyecto>.supabase.co
-SUPABASE_KEY=<tu-anon-key>
+SUPABASE_KEY=sb_publishable_<tu-clave-publicable>
 ```
+
+> **Importante:** usa la **Clave publicable** (`sb_publishable_...`) que aparece en
+> **Supabase → Project Settings → API → Project API keys**.
+> Nunca uses la _service role key_ (`sb_secret_...`) en una app cliente: tiene
+> privilegios de administrador y omite Row Level Security.
 
 > **Nunca subas `local.properties` al repositorio.** Ya está en `.gitignore`.
 
@@ -91,8 +96,8 @@ Abre el proyecto en **Android Studio**, haz clic en **Sync Project with Gradle F
 Las credenciales (`SUPABASE_URL` y `SUPABASE_KEY`) se leen desde `local.properties` en tiempo de compilación y se exponen como constantes `BuildConfig.SUPABASE_URL` / `BuildConfig.SUPABASE_KEY`. El archivo `local.properties` está excluido del control de versiones mediante `.gitignore`.
 
 Se recomienda:
-- Usar la **anon key** (clave pública) en lugar de la service role key en apps cliente.
-- Configurar **Row Level Security (RLS)** en Supabase para controlar el acceso a los datos.
+- Usar la **clave publicable** (`sb_publishable_...`) en lugar de la service role key en apps cliente.
+- Configurar **Row Level Security (RLS)** en Supabase para controlar el acceso a los datos. Sin RLS activo, cualquier persona que obtenga la clave publicable puede leer toda la tabla.
 
 ## Requisitos
 
