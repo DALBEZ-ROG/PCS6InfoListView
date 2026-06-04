@@ -6,18 +6,9 @@ Aplicación Android nativa en Kotlin que consulta la tabla **alumnos** en **Supa
 
 ## Capturas de pantalla
 
-> Toma capturas desde el emulador o dispositivo (**Android Studio → Device Mirror** o `Ctrl+S` en el emulador) y guárdalas en `docs/screenshots/`. Luego reemplaza cada bloque de abajo con la imagen correspondiente.
-
-| Alumnos | Materias | Nombres |
-|---------|----------|---------|
-| ![Pantalla Alumnos](docs/screenshots/alumnos.png) | ![Pantalla Materias](docs/screenshots/materias.png) | ![Pantalla Nombres](docs/screenshots/nombres.png) |
-
-> Para agregar las capturas:
-> 1. Crea la carpeta `docs/screenshots/` en la raíz del proyecto.
-> 2. Guarda cada captura con el nombre exacto que aparece arriba (`alumnos.png`, `materias.png`, `nombres.png`).
-> 3. Haz commit y push — GitHub las mostrará automáticamente en esta tabla.
-
----
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/827b625c-9fba-4e9e-8215-3c818a3921df" />
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/bdf07636-90c0-456a-81ff-2527fdaf429a" />
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/02baa714-2c65-4ee2-8aec-6ba22a3c2166" />
 
 ## Características
 
@@ -35,14 +26,14 @@ Aplicación Android nativa en Kotlin que consulta la tabla **alumnos** en **Supa
 
 ## Tecnologías
 
-| Librería | Uso |
-|---|---|
-| [Supabase Kotlin SDK](https://github.com/supabase-community/supabase-kt) (BOM 3.1.4) | Cliente Supabase + Postgrest |
-| [Ktor Client Android](https://ktor.io/) 3.1.3 | Motor HTTP para Supabase |
-| [Glide](https://bumptech.github.io/glide/) 4.16.0 | Carga de imágenes + CircleCrop |
-| [Material Components](https://m3.material.io/) | BottomNavigationView, ExposedDropdownMenu, MaterialAlertDialog |
-| Kotlin Serialization 2.0.21 | Deserialización de respuestas JSON |
-| AndroidX AppCompat / Lifecycle | Base de actividades + `lifecycleScope` |
+|                              Librería                                                |                                 Uso                            |
+|--------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| [Supabase Kotlin SDK](https://github.com/supabase-community/supabase-kt) (BOM 3.1.4) | Cliente Supabase + Postgrest                                   |
+| [Ktor Client Android](https://ktor.io/) 3.1.3                                        | Motor HTTP para Supabase                                       |
+| [Glide](https://bumptech.github.io/glide/) 4.16.0                                    | Carga de imágenes + CircleCrop                                 |
+| [Material Components](https://m3.material.io/)                                       | BottomNavigationView, ExposedDropdownMenu, MaterialAlertDialog |
+| Kotlin Serialization 2.0.21                                                          | Deserialización de respuestas JSON                             |
+| AndroidX AppCompat / Lifecycle                                                       | Base de actividades + `lifecycleScope`                         |
 
 ---
 
