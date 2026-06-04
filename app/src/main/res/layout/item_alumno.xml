@@ -19,7 +19,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tvNombre"
+            android:id="@+id/txtNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
@@ -28,7 +28,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tvCorreo"
+            android:id="@+id/txtCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
@@ -36,11 +36,19 @@
             android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/tvCedula"
+            android:id="@+id/txtTelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:textColor="#757575"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/txtParalelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textColor="#A5D6A7"
             android:textSize="11sp" />
 
     </LinearLayout>

@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">PCS6 Info ListView</string>
+
+    <string-array name="semestres">
+        <item>Primero</item>
+        <item>Segundo</item>
+        <item>Tercero</item>
+        <item>Cuarto</item>
+        <item>Quinto</item>
+        <item>Sexto</item>
+        <item>Séptimo</item>
+        <item>Octavo</item>
+    </string-array>
+
+    <string-array name="materias_sexto">
+        <item>Administración de Plataformas de Software</item>
+        <item>Aplicaciones Móviles</item>
+        <item>Construcción de Software</item>
+        <item>Proceso de Software</item>
+        <item>Redes de Datos</item>
+    </string-array>
 </resources>

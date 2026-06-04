@@ -5,14 +5,15 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Alumno(
-    @SerialName("id")
     val id: Long,
-    @SerialName("cedula")
-    val cedula: String? = null,
-    @SerialName("apellidos_nombres")
-    val apellidosNombres: String? = null,
-    @SerialName("correo_institucional")
-    val correoInstitucional: String? = null,
-    @SerialName("correo_microsoft")
-    val correoMicrosoft: String? = null
+    @SerialName("foto")
+    val foto: String? = null,
+    @SerialName("nombres")
+    val nombres: String? = null,
+    @SerialName("correo")
+    val correo: String? = null,
+    @SerialName("paralelo")
+    val paralelo: String? = null,
+    @SerialName("telefono")
+    val telefono: String? = null
 )
