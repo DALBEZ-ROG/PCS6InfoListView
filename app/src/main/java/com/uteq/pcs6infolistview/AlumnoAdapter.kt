@@ -28,7 +28,7 @@ class AlumnoAdapter(context: Context, var alumnos: ArrayList<Alumno>) :
         txtCorreo.text   = alumno.correo
         txtTelefono.text = alumno.telefono
 
-        val urlFoto = "https://hnwamldwpxezbjtcmrup.supabase.co" + (alumno.foto ?: "")
+        val urlFoto = "https://sga.uteq.edu.ec" + (alumno.foto ?: "")
         Glide.with(context)
             .load(urlFoto)
             .placeholder(R.drawable.ic_person)
