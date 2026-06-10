@@ -17,6 +17,7 @@ Aplicación Android nativa en Kotlin que consulta la tabla **alumnos** en **Supa
 - **Pantalla Materias:** lista estática de asignaturas de Sexto Semestre PCS
 - **Pantalla Nombres:** lista dinámica de nombres consultados desde Supabase en orden alfabético
 - Avatares cargados desde la URL de Storage de Supabase con **Glide** + `CircleCrop`; placeholder vectorial `ic_person` si no hay foto
+- Íconos descriptivos en cada fila: correo (`ic_dialog_email`) y teléfono (`ic_menu_call`) tintados en `#64B5F6`
 - Manejo de errores con `MaterialAlertDialogBuilder` via `SupabaseErrorHandler`
 - Tema completamente oscuro (`#000000`) con acentos en azul claro (`#64B5F6`)
 - Efecto ripple en cada fila al tocar
@@ -42,7 +43,7 @@ Aplicación Android nativa en Kotlin que consulta la tabla **alumnos** en **Supa
 ```
 app/src/main/
 ├── java/com/uteq/pcs6infolistview/
-│   ├── Alumno.kt                  # Data class @Serializable (modelo)
+│   ├── Alumno.kt                  # Data class @Serializable — campos sin @SerialName (nombres coinciden con columnas)
 │   ├── SupabaseManager.kt         # Singleton del cliente Supabase
 │   ├── AlumnoAdapter.kt           # ArrayAdapter con Glide + foto Supabase
 │   ├── MainActivity.kt            # Pantalla Alumnos + dropdowns + BottomNav
@@ -55,7 +56,7 @@ app/src/main/
     │   ├── activity_main.xml      # Logo + dropdowns + ListView + BottomNav
     │   ├── activity_materias.xml  # Logo + título + ListView + BottomNav
     │   ├── activity_nombres.xml   # Logo + título + ListView + BottomNav
-    │   └── item_alumno.xml        # Fila: avatar circular + nombre + correo + teléfono + paralelo
+    │   └── item_alumno.xml        # Fila: avatar circular + nombre + ícono+correo + ícono+teléfono + paralelo
     ├── menu/
     │   └── bottom_nav_menu.xml    # 3 ítems de navegación inferior
     ├── color/
@@ -76,13 +77,13 @@ app/src/main/
 
 ```sql
 create table alumnos (
-  id          bigint primary key,
+  id          bigint primary key,   -- mapeado a Int en Alumno.kt
   created_at  timestamptz default now(),
-  foto        text,          -- ruta relativa en Supabase Storage
   nombres     text,
   correo      text,
-  paralelo    char,
-  telefono    text
+  telefono    text,
+  foto        text,          -- ruta relativa en Supabase Storage
+  paralelo    char
 );
 ```
 
