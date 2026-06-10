@@ -6,7 +6,7 @@ Aplicación Android nativa en Kotlin que consulta la tabla **alumnos** en **Supa
 
 ## Capturas de pantalla
 
-<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/c45326f1-e7ee-4eeb-b84a-ea44f5349562" />
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/7899854e-5531-4ea2-86f2-f7f157a4c6a4" />
 <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/bdf07636-90c0-456a-81ff-2527fdaf429a" />
 <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/02baa714-2c65-4ee2-8aec-6ba22a3c2166" />
 
